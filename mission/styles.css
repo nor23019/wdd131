@@ -1,0 +1,55 @@
+.content{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 575;
+    width: 600px;
+    margin: 0 auto;
+    align-items: center;
+    border: 1px solid black;
+    padding-top: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.title h1{
+    text-transform: uppercase;
+    font-weight: 550;
+}
+
+main{
+padding-top: 18px;
+}
+
+
+.title h2{
+    color: #006EB6;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 550;
+    border-bottom: 1px solid grey;
+} 
+
+.title{
+    text-align: center;
+    letter-spacing: .2rem;
+}
+
+.logo{
+    width: 150px;
+}
+
+ol li{
+    padding-bottom: 15px;
+}
+
+p, li{
+    line-height: 1.5;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
