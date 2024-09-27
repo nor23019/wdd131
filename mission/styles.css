@@ -20,7 +20,6 @@ main{
 padding-top: 18px;
 }
 
-
 .title h2{
     color: #006EB6;
     text-transform: uppercase;
@@ -52,4 +51,13 @@ footer{
     justify-content: center;
     padding-top: 25px;
     padding-bottom: 50px;
+}
+
+.dark{
+    background-color: #333;
+    color: white;
+}
+
+.dark h2 {
+    color: #14a2ff;
 }
