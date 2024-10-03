@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+
+:root {
+    --primary-color: #52489c;
+    --secondary-color: #59c3c3;
+    --accent-color: #f45b69;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica,sans-serif;
+    --secondary-font: Mooli, sans-serif;
+    }
+
+body{
+    margin: 0 auto;
+}
+
+header{
+    background-color: var(--primary-color)
+}
+
+header h1{
+    font-family: var(--secondary-font);
+    color: var(--text-light);
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 0;
+}
+
+header h2{
+    font-family: var(--primary-font);
+    color: var(--text-light);
+    
+}
+
+button{
+    font-size: large;
+    font-family: var(--primary-font);
+    color: var(--text-light);
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color:  var(--primary-color);
+    padding: 1rem;
+}
+
+a{
+    color: var(--text-light);    
+    text-decoration: underline;
+}
+main{
+    background-color: lightgrey;
+
+}
+
+/* help */
+main h2{
+    font-family: var(--secondary-font);
+    font-weight: bolder;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery img{
+    border: 7px solid white;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+img {
+	max-width: 100%;
+}
+
+footer{
+    background-color: var(--primary-color);
+    color: var(--text-light); 
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+
+@media (min-width: 700px) {
+
+    .gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    button{
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    button{
+        display: none;
+    }
+}
