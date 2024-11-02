@@ -1,70 +1,110 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
-
-/* 
-Black-color: black
-White-color: white
-Chinese Violet: #67597A
-Wisteria: #BEA7E5
-Body font: Poppins, Arial, sans-serif
-Headline font: Kanit, Impact, serif (Lora can be found on Google Fonts.) */
-
-h1{
-    font-family: "Poppins", Impact, serif;
-    font-size: xx-large;
-    text-align: center;
-    color: #67597A;
+:root {
+    --primary-color: #ccd5ae;
+    --secondary-color: #e9edc9;
+    --accent-color: #bc6c25;
+    --primary-font: Arial, Helvetica, sans-serif;
+    --headline-font: Montserrat, san-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    --border-heavy: 2px solid var(--primary-color);
+    --border-light: 2px solid var(--primary-color);
 }
 
-
-.main-nav{
-    border-top: 1px solid #BEA7E5;
-    border-bottom: 1px solid #BEA7E5;
-    
-}   
-
-ul{
-    list-style-type: none;
+body {
     margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: white;
-}
-  
-li{
-    float: right;
-}
-  
-li a{
-    display: block;
-    color: #67597A;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
 }
 
-main{
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 500px 650px;
-}
-
-.filters{
-grid-row: 1/3;
-grid-column: 3/4;
-}
-
-.skiptocontent a{
+.skiptocontent a {
     position: absolute;
     top: -40px;
-    background-color: #BEA7E5;
+    
+    color: black;
+}
+
+.skiptocontent a:focus {
+    font-weight: bold;  
+    background-color: red;      
+    padding: 1rem 3rem; 
+    position: absolute;
+    top: 0px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
+}
+
+main .filter-container {
+    padding: 1rem;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.filter-container .filter-list {
+    border: var(--border-light);
+    padding: 1rem;
+    height: 100%;
+}
+
+header h1 {
+    font-weight: 700;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+    border-top: var(--border-heavy);
+    border-bottom: var(--border-heavy);
+}
+
+nav a {
+    padding: 1.5rem 3rem;
+    cursor: pointer;
     color: black;
     text-decoration: none;
+    color: var(--accent-color);
 }
 
-.skiptocontent a:focus{
-    position: absolute;
-    top: 50px;
+nav a:hover {
+    text-decoration: underline;
 }
 
+.blog-post-container {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    padding: 1rem;
+}
+
+.blog-metadata {
+    display: flex;
+    justify-content: end;
+    padding: 2rem;
+}
+
+.blog-metadata p {
+    line-height: 1.5rem;
+    text-align: right;
+}
+
+.blog-content {
+    border-left: var(--border-light);
+    padding: 2rem;
+}
+
+.blog-content h2 {
+    text-align: center;
+    color: var(--accent-color);
+}
+
+.book-image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 250px;
+}

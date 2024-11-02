@@ -1,58 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kids Read For Fun</title>
-    <link rel="stylesheet" href="blog.css">
-    <script src="blog.js" defer></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="McKay Finlayson">
+  <meta name="description" content="run
+ning blog">                                                                                                        
+
+  <link href="blog.css" rel="stylesheet">
+  <script src="blog.js" defer></script>
+  <title>Kid's Blog</title>
 </head>
+
 <body>
-    <header>
-        <h1>Kids Read For Fun</h1>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="#">Search</a></li>
-                <li><a href="#">Archive</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-        </nav>
-        <div class="skiptocontent">
-            <a href="#maincontent">Skip to main content</a>
-          </div>
-    </header>
-
-    <main id="maincontent">
-        <div class="book-info">
-            <p class="date">July 5, 2022</p>
-            <p class="ages">10-14</p>
-            <p class="genre">Fantasy</p>
-            <p class="stars">⭐⭐⭐⭐</p>
-        </div>
-        <div class="book-order">
-            <div class="book1">
-            <h2 class="book-title">Septimus Heap Book One: Magyk</h2>
+  <header>
+    <div class="skiptocontent">
+      <a href="#maincontent">Skip to main content</a>
+    </div>
+    <h1>Kids Read for Fun</h1>
+    <nav>
+      <a href="#">About</a>
+      <a href="#">Archive</a>
+      <a href="#">search</a>
+    </nav>
+  </header>
+  <main id="maincontent">
+    <div class="blog-post-container">
+      <div class="blog-metadata">
+        <p>
+          date <br />
+          12-16 <br />
+          category<br />
+          rating<br />
+        </p>
+      </div>
+      <div class="blog-content">
+        <h2>Septimus Heap Book One: Magyk</h2>
+        <div class="book-image-container">
             <img src="https://upload.wikimedia.org/wikipedia/en/5/5f/Magkycover2.jpg" alt="Book cover for Septimus Heap 1">
-            <p class="description">If you enjoy stories about seventh sons of seventh sons and magyk this is the book for you.</p>
-            </div>
         </div>
-
-        <div class="filters">Filters will go here</div> 
-
-        <div class="book-info">
-            <p class="date">December 12, 2021</p>
-            <p class="ages">12-16</p>
-            <p class="genre">Fantasy</p>
-            <p class="stars">⭐⭐⭐⭐</p>
+        <p>If you enjoy stories about seventh sons of seventh sons and magyk this is the book for you.</p>
+      </div>
+    </div>
+    
+    <div class="blog-post-container">
+        <div class="blog-metadata">
+          <p>
+            date <br />
+            12-16 <br />
+            category<br />
+            rating<br />
+          </p>
         </div>
-        <div class="book-order">
-            <div class="book1">
-            <h2 class="book-title">Magnus Chase Book One: Sword of Summer</h2>
-            <img src="https://books.google.com/books/content/images/frontcover/xWuyBAAAQBAJ?fife=w300" alt='Book cover for Magnus Chase 1'>
-            <p class="description">The anticipated new novel by Rick Riordan. After Greek mythology (Percy Jackson), Greek/Roman (Heroes of Olympus), and Egyptian (Kane Chronicles), Rick decides to try his hand with Norse Mythology, and the end result is good.</p>
-            </div>
+        <div class="blog-content">
+          <h2>Septimus Heap Book One: Magyk</h2>
+          <div class="book-image-container">
+              <img src="https://upload.wikimedia.org/wikipedia/en/5/5f/Magkycover2.jpg" alt="Book cover for Septimus Heap 1">
+          </div>
+          <p>If you enjoy stories about seventh sons of seventh sons and magyk this is the book for you.</p>
         </div>
+    </div>
 
-    </main>
+    <div class="filter-container">
+      <div class="filter-list">
+        <select>
+          <option>Filters</option>
+        </select>
+      </div>
+    </div>
+  </main>
+
 </body>
+
 </html>
