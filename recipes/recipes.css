@@ -1,0 +1,138 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+ :root {
+ --primary-color: #1B98E0;
+ --secondary-color: #59c3c3;
+ --text-dark: #333;
+ --text-light: #ebebeb;
+ --primary-font: 'Merriweather', Helvetica,sans-serif;
+ --secondary-font: "Amatic SC";
+ }
+
+body{
+    padding: 10px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+
+#search-bar{
+    width: 97%;
+}
+
+
+form{
+    position: relative;
+    padding: 0;
+    margin: 20px 0 10px 0;
+    width: 100%;
+}
+
+button{
+    position: absolute;
+    right: 1px;
+}
+
+main{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+h1 {
+    font-family: var(--primary-font);
+    display: inline;
+}
+
+h2{
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+    margin: 20px 0 0px 0;
+}
+
+
+.recipe-description{
+    display: none;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+
+}
+
+.recipe-image{
+    margin: 10px 0 10px 0;
+}
+
+.tag{
+    display: inline;
+    border: 1px solid black;
+    text-decoration: solid;
+    margin: 5px auto;
+    padding: 2px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.rating{
+    margin-bottom: 20px;
+}
+
+.logo{
+    height: 60px;
+    width: 50px;
+}
+
+.icon{
+    width: auto;
+    height: 12px;
+}
+
+.recipe-image{
+    width: auto;
+    height: 100%;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0 10px 0;
+}
+
+.social img{
+    width: auto;
+    height: 50px;
+}
+
+
+@media (min-width: 600px) {
+    .recipe-description{
+        display: block;
+    }
+
+    main{
+        flex-direction: row;
+    }
+
+    .recipe-image{
+        width: auto;
+        height: 300px;
+        margin: 0 15px 0 0;
+    }
+    
+    .social{
+        flex-direction: end;
+        justify-content: flex-end;
+    }
+
+}
