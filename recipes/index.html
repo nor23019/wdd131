@@ -10,48 +10,21 @@
     <meta property="og:url" content="https://nor23019.github.io/wdd131/recipes/index.html">
     <meta name="twitter:card" content="https://unsplash.com/photos/round-white-ceramic-plate-filled-with-waffle-hrlvr2ZlUNk">
     <link rel="stylesheet" href="recipes.css">
-    <title>Document</title>
-    <script src="main.js" defer></script>
+    <title>Recipe</title>
+    <script type="module" src="main.js"  defer></script>
 </head>
 <body>
     <header>
         <div class="container-title">
             <img class="logo" src="images/recipe-book.png" alt="Logo of Recipe Book">
-            <h1>Recipe Book</h1>
+            <h1>Recipe Book</h1> 
         </div>
         <form class="" action="action_page.php">
-            <input id="search-bar" type="text" placeholder="Find a recipe" name="search">
+            <input id="search-bar" type="text" placeholder="Find a recipe" name="search"> 
             <button id = "search" type="submit"><img class="icon" alt="search button image " src="images/search.svg"></img></button>
           </form>
     </header>
-    
-    <main>
-        <img class="recipe-image" src="images/apple-crisp.jpg" alt="Apple Crisp image">
-        <div>
-            <h3 class="tag">dessert</h3>
-
-            <h2 class="recipe-name">Apple Crisp</h2>
-      
-        <span
-        class="rating"
-        role="img"
-        aria-label="Rating: 4 out of 5 stars"
-        >
-            <span aria-hidden="true" class="icon-star">⭐</span>
-            <span aria-hidden="true" class="icon-star">⭐</span>
-            <span aria-hidden="true" class="icon-star">⭐</span>
-            <span aria-hidden="true" class="icon-star-empty">⭐</span>
-            <span aria-hidden="true" class="icon-star-empty">☆</span>
-        </span>
-
-        <p class="recipe-description">
-            This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.
-        </p>
-        </div>
-        
-
-    </main>
-
+        <main id="recipe-container"></main>
     <footer>
         <title><img src="images/recipe-book.png" alt="Logo of Recipe Book"></title>
         <div class="social">
