@@ -8,7 +8,7 @@ function getRandomListEntry(list) {
 
 function recipeTemplate(recipe) {
     return `
-    <img class="recipe-image" src="${recipe.image}" alt="image of ${recipe.name}"/>
+    <img class="recipe-image" src="${recipe.image}" alt="image of ${recipe.alt}"/>
     <div>
         <h3 class="tag">${recipe.tags[0] || 'Recipe'}</h3>
         <h2 class="recipe-name">${recipe.name}</h2>
